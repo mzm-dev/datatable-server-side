@@ -65,7 +65,7 @@ $stmt->execute();
 $stmtTotal->execute();
 
 //Fetch all result row as an associative array.
-$data  = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$data  = $stmt->fetchAll();
 
 //Get row count
 $totalRecords  = $stmtTotal->rowCount();
