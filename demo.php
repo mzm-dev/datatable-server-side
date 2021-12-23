@@ -64,22 +64,25 @@
                     "targets": -1,
                     "data": null,
                     "defaultContent": htmlBtn
-                }]
+                }, {
+                    orderable: false,
+                    targets: [0, 5]
+                }, ]
             });
 
             $('#post_list tbody').on('click', 'button.one', function() {
                 var data = table.row($(this).parents('tr')).data();
-                alert("ID : "+data[0]+" 'Data: " + data[1]);
+                alert("ID : " + data[0] + " 'Data: " + data[1]);
             });
 
             $('#post_list tbody').on('click', 'button.two', function() {
                 var data = table.row($(this).parents('tr')).data();
-                alert("ID : "+data[0]+" 'Data: " + data[2]);
+                alert("ID : " + data[0] + " 'Data: " + data[2]);
             });
-            
+
             $('#post_list tbody').on('click', 'button.three', function() {
                 var data = table.row($(this).parents('tr')).data();
-                alert("ID : "+data[0]+" 'Data: " + data[3]);
+                alert("ID : " + data[0] + " 'Data: " + data[3]);
             });
         });
     </script>
