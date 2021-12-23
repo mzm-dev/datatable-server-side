@@ -51,6 +51,9 @@
             htmlBtn += '</div>';
 
             var table = $('#post_list').DataTable({
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/ms.json'
+                },                
                 "bProcessing": true,
                 "serverSide": true,
                 "ajax": {
